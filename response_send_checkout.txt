@@ -1,0 +1,3 @@
+Código: 200
+Respuesta:
+{"result":"failure","messages":"\n<ul class=\"woocommerce-error\" role=\"alert\">\n\t\t\t<li>\n\t\t\tNo hemos podido procesar tu pedido, por favor int\u00e9ntalo de nuevo.\t\t<\/li>\n\t<\/ul>\n","refresh":true,"reload":false}

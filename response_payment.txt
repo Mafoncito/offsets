@@ -1,0 +1,159 @@
+Código: 200
+Respuesta:
+
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<meta name="description" content=""/>
+		<meta name="author" content=""/>
+		<title>Internet Payment Gateway</title>
+
+		<!-- Bootstrap Core CSS -->
+		<link rel="stylesheet" type="text/css"
+			  nonce="b3VCSEVVb3VSNjVhQjh1dXF1Z2RaMW5vWW9UN0VGamM="
+			  href="/connect/payment/resources/external/bootstrap/css/bootstrap.min.css;jsessionid=79DB1AB99B851887929C.dc?t=active&amp;r=dc&amp;k=MTcyLjI1LjEzOC44MDo4ODQz?version=fb55c3f"/>
+		<!-- Font awesome -->
+		<link rel="stylesheet" type="text/css"
+			  nonce="b3VCSEVVb3VSNjVhQjh1dXF1Z2RaMW5vWW9UN0VGamM="
+			  href="/connect/payment/resources/external/font-awesome-min/css/font-awesome.min.css;jsessionid=79DB1AB99B851887929C.dc?t=active&amp;r=dc&amp;k=MTcyLjI1LjEzOC44MDo4ODQz?version=fb55c3f"/>
+		
+		<link rel="stylesheet" type="text/css"
+			  nonce="b3VCSEVVb3VSNjVhQjh1dXF1Z2RaMW5vWW9UN0VGamM="
+			  href="/connect/payment/resources/external/select2/css/select2.min.css;jsessionid=79DB1AB99B851887929C.dc?t=active&amp;r=dc&amp;k=MTcyLjI1LjEzOC44MDo4ODQz?version=fb55c3f"/>
+		<link rel="stylesheet" type="text/css"
+			  nonce="b3VCSEVVb3VSNjVhQjh1dXF1Z2RaMW5vWW9UN0VGamM="
+			  href="/connect/payment/resources/external/select2-bootstrap-theme/select2-bootstrap.min.css;jsessionid=79DB1AB99B851887929C.dc?t=active&amp;r=dc&amp;k=MTcyLjI1LjEzOC44MDo4ODQz?version=fb55c3f"/>
+		
+		<link rel="stylesheet" type="text/css"
+			  nonce="b3VCSEVVb3VSNjVhQjh1dXF1Z2RaMW5vWW9UN0VGamM="
+			  href="/connect/payment/resources/external/bootstrap-datepicker/css/bootstrap-datepicker3.min.css;jsessionid=79DB1AB99B851887929C.dc?t=active&amp;r=dc&amp;k=MTcyLjI1LjEzOC44MDo4ODQz?version=fb55c3f"/>
+		<!-- General payment form style -->
+		<link nonce="b3VCSEVVb3VSNjVhQjh1dXF1Z2RaMW5vWW9UN0VGamM=" rel="stylesheet" type="text/css" href="/connect/payment/resources/css/payment.css;jsessionid=79DB1AB99B851887929C.dc?t=active&amp;r=dc&amp;k=MTcyLjI1LjEzOC44MDo4ODQz?version=fb55c3f"/>
+		<!-- Custom merchant CSS -->
+		<link nonce="b3VCSEVVb3VSNjVhQjh1dXF1Z2RaMW5vWW9UN0VGamM=" rel="stylesheet" type="text/css" href="/connect/customCSS.ipg;jsessionid=79DB1AB99B851887929C.dc?t=active&amp;r=dc&amp;k=MTcyLjI1LjEzOC44MDo4ODQz?version=fb55c3f"/>
+		<!-- CSS for oxxo voucher-->
+		<link nonce="b3VCSEVVb3VSNjVhQjh1dXF1Z2RaMW5vWW9UN0VGamM=" rel="stylesheet" type="text/css" href="/connect/payment/resources/css/oxxo_cash_voucher.css;jsessionid=79DB1AB99B851887929C.dc?t=active&amp;r=dc&amp;k=MTcyLjI1LjEzOC44MDo4ODQz?version=fb55c3f"/>
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		<script nonce="b3VCSEVVb3VSNjVhQjh1dXF1Z2RaMW5vWW9UN0VGamM=" src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script nonce="b3VCSEVVb3VSNjVhQjh1dXF1Z2RaMW5vWW9UN0VGamM=" src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		
+		<!-- jQuery -->
+		<script nonce="b3VCSEVVb3VSNjVhQjh1dXF1Z2RaMW5vWW9UN0VGamM=" src="/connect/payment/resources/external/jquery/jquery.min.js;jsessionid=79DB1AB99B851887929C.dc?t=active&amp;r=dc&amp;k=MTcyLjI1LjEzOC44MDo4ODQz?version=fb55c3f"></script>
+		<script nonce="b3VCSEVVb3VSNjVhQjh1dXF1Z2RaMW5vWW9UN0VGamM=" src="/connect/payment/resources/external/jquery/jquery.matchHeight.js;jsessionid=79DB1AB99B851887929C.dc?t=active&amp;r=dc&amp;k=MTcyLjI1LjEzOC44MDo4ODQz?version=fb55c3f"></script>
+		<script nonce="b3VCSEVVb3VSNjVhQjh1dXF1Z2RaMW5vWW9UN0VGamM=" src="/connect/payment/resources/external/select2/js/select2.min.js;jsessionid=79DB1AB99B851887929C.dc?t=active&amp;r=dc&amp;k=MTcyLjI1LjEzOC44MDo4ODQz?version=fb55c3f"></script>
+		<!-- Bootstrap Core JavaScript -->
+		<script nonce="b3VCSEVVb3VSNjVhQjh1dXF1Z2RaMW5vWW9UN0VGamM=" src="/connect/payment/resources/external/bootstrap/js/bootstrap.min.js;jsessionid=79DB1AB99B851887929C.dc?t=active&amp;r=dc&amp;k=MTcyLjI1LjEzOC44MDo4ODQz?version=fb55c3f"></script>
+		<!-- Bootstrap datepicker -->
+		<script nonce="b3VCSEVVb3VSNjVhQjh1dXF1Z2RaMW5vWW9UN0VGamM=" src="/connect/payment/resources/external/bootstrap-datepicker/js/bootstrap-datepicker.min.js;jsessionid=79DB1AB99B851887929C.dc?t=active&amp;r=dc&amp;k=MTcyLjI1LjEzOC44MDo4ODQz?version=fb55c3f"></script>
+		<script nonce="b3VCSEVVb3VSNjVhQjh1dXF1Z2RaMW5vWW9UN0VGamM=" src="/connect/payment/resources/external/bootstrap-datepicker/locales/bootstrap-datepicker.en.min.js;jsessionid=79DB1AB99B851887929C.dc?t=active&amp;r=dc&amp;k=MTcyLjI1LjEzOC44MDo4ODQz?version=fb55c3f"></script>
+		<script nonce="b3VCSEVVb3VSNjVhQjh1dXF1Z2RaMW5vWW9UN0VGamM=" src="/connect/payment/resources/js/common/iframedetection.js;jsessionid=79DB1AB99B851887929C.dc?t=active&amp;r=dc&amp;k=MTcyLjI1LjEzOC44MDo4ODQz?version=fb55c3f"></script>
+		
+		<!-- Optionally (if present) include "head" fragment from the included view - in case we want to add more css/javascript links -->
+		
+		
+		<script nonce="b3VCSEVVb3VSNjVhQjh1dXF1Z2RaMW5vWW9UN0VGamM=" type="text/javascript">
+	/*<![CDATA[*/
+	$(document).ready(function () {
+		if (window.self === window.top) {
+			var favIconName = $("input[alt$='favIconName']").val();
+			if (favIconName) {
+				var contextPath = $("input[alt$='contextPath']").val();
+				var url = contextPath + "/images/reseller/favImg/" + favIconName;
+				var link = top.document.createElement("link");
+				link.type = "image/x-icon";
+				link.rel = "shortcut icon";
+				link.href = url;
+				top.document.getElementsByTagName("head")[0].appendChild(link);
+			}
+		}
+		const frameDetectionUrl = "\/connect\/asyncNotification\/frameDetection;jsessionid=79DB1AB99B851887929C.dc?t=active\u0026r=dc\u0026k=MTcyLjI1LjEzOC44MDo4ODQz";
+		checkForIFrameDetection(frameDetectionUrl);
+	});
+	/*]]>*/
+</script><script nonce="b3VCSEVVb3VSNjVhQjh1dXF1Z2RaMW5vWW9UN0VGamM=" type="text/javascript" src="/connect/resources/js/fragment/countdownTimer.js;jsessionid=79DB1AB99B851887929C.dc?t=active&amp;r=dc&amp;k=MTcyLjI1LjEzOC44MDo4ODQz?version=fb55c3f"></script>
+	</head>
+
+<body>
+
+		<nav class="navbar navbar-inverse navbar-static-top">
+			<div class="container">
+				<div class="navbar-header">
+<!-- 					<span class="navbar-brand" th:text="${basicModel.resellerType}">TELECASH</span> -->
+				</div>
+				
+			</div>
+			<!-- /.container -->
+		</nav>
+	
+<!-- Page Content -->
+<div class="container combined-mode-container">
+	<div class="row firstrow">
+		<div class="col-md-12">
+			<img class="img-responsive logo" src="/connect/customFormImage.ipg;jsessionid=79DB1AB99B851887929C.dc?&amp;position=TOP&amp;t=active&amp;r=dc&amp;k=MTcyLjI1LjEzOC44MDo4ODQz">
+			<h1></h1>
+			<input type="hidden" alt="contextPath" name="contextPath" value="/connect"></input>
+			<input type="hidden" alt="favIconName" name="favIconName" value=""></input>
+		</div>
+		
+	</div>
+	<div class="row paymentrow row-xs-padding">
+		<div class="col-xs-12 col-md-12">
+			<div class="paymentcol row-xs-padding">
+				
+				
+            <div class="errorPage font-size-medium">
+                <label class="errorLabelHeadline">Your transaction may not be completed successfully</label>
+                <br />
+                
+                    <label class="margin-bottom-12">Please contact the store administrator</label>
+                
+                
+            </div>
+            
+	<div id="requestInfoPanel">
+		<ul>
+			<li>
+				<label>Store Id: </label>
+				
+			</li>
+			<li>
+				<label>Order Id: </label>
+				
+			</li>
+			<li>
+				<label>Client IP-Address: </label>
+				
+			</li>
+			<li>
+				<label>ID: </label>
+				
+			</li>
+		</ul>
+	</div>
+
+        
+			</div>
+		</div>
+		<!-- right column -->
+		
+	</div>
+	<div class="row lastrow">
+		<div class="col-xs-12">
+			<img class="img-responsive logo" src="/connect/customFormImage.ipg;jsessionid=79DB1AB99B851887929C.dc?&amp;position=BOTTOM&amp;t=active&amp;r=dc&amp;k=MTcyLjI1LjEzOC44MDo4ODQz">
+		</div>
+		
+	</div>
+	
+
+</div>
+
+</body>
+</html>
